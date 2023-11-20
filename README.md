@@ -12,7 +12,7 @@ import time
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7, GPIO.OUT)
 GPIO.setup(11, GPIO.OUT)
-
+```
 El bucle principal (while True:) se repite infinitamente, y después de cada secuencia de parpadeo, se apagan ambos LEDs antes de comenzar la siguiente secuencia. El programa continuará ejecutándose hasta que sea interrumpido manualmente.
 ```python
 while True:
@@ -30,3 +30,4 @@ while True:
     timeout = time.time() + 60  # 0.5 minutos desde ahora
     while time.time() < timeout:
         intermitenteRapido()
+```
