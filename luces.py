@@ -19,7 +19,8 @@ def intermitenteRapido(): 
 	time.sleep(0.1)
 	GPIO.output(7, False)
 	GPIO.output(11,False)
-	def intermitente():
+
+def intermitente():
 	#print('Intermitente!')
 	GPIO.output(7, True)
 	GPIO.output(11,False)
